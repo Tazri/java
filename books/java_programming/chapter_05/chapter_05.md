@@ -247,5 +247,24 @@ balances[2] = new int[25];
 <hr />
 
 ## Practice 
+Here is all practice file : 
+- [Practice 01: ](./practice/Stack.java)
+- [Practice 02: ](./practice/PrintFibo.java)
+- [Practice 03: ](./practice/SortArray.java)
+- [Practice 04: ](./practice/SortArrayUser.java)
+- [Practice 05: ](./practice/ArrayHighestandLowest.java)
+- [Practice 06: ](./practice/RemoveOdd.java)
+- [Practice 07: ](./practice/FindTwoSum.java)
+- [Practice 08: ](./practice/EqualArray.java)
+- [Practice 09 and 10: ](./practice/Temperature.java)
+- [Practice 11: ](./practice/CountriesQuiz.java)
 
 <hr />
+
+## Navigator
+
+#### [< Chapter 4 : Control FLow >](./../chapter_03/chapter_03.md)
+#### [Back to table of Index](./../Note.md)
+#### [Chapter 6 : Object and Class >](./../chapter_05/chapter_05.md)
+
+#### [Back to READEME.md >](./../../../README.md)

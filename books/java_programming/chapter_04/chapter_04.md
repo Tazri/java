@@ -206,8 +206,6 @@ do{
 
 <hr />
 
-<hr />
-
 #### [< Chapter 3 : Data Type, Operator and Expression >](./../chapter_03/chapter_03.md)
 #### [Back to table of Index](./../Note.md)
 #### [Chapter 5 : Array >](./../chapter_05/chapter_05.md)
