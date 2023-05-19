@@ -135,3 +135,130 @@ class ClassName{
 #### [Make a simple tic tac tie game with class, object, methods and fields.](./TicTacToe.java)
 
 <hr />
+
+## Java Method
+
+***Syntax of method declaration :***
+
+```java
+public class ClassName{
+    access_modifier returnType methodName(List of Parameters){
+        // method body
+    }
+}
+```
+
+#### Access Modifier :
+
+> 🟢 Access modifier set the limitation of the method where the method can be called.
+
+**There are three access modifier :**
+- public
+- private
+- protected
+
+🟢 A method which is public, is accessable from any class, where private and protected are not.
+
+#### Return Type
+
+Return type mean what method return after the complating task, if method dose not return anything in that case use `void` keyword.
+
+#### Method Name
+This is just a method name. Java follow the camelCase convention for naming method.
+
+#### List of Parameters
+If method take a paramers then, write them inside the first bracket sperate by comma, with their type.
+
+#### List of Exceptions
+Method can be throw exception one or more. If method can throw exception then write `throw` keyword after the parentheses.
+
+#### Method Body
+It contains statements of method which is execute after calling the method. It start opening culry bracess '{' and end with endin curly bracess '}'.
+
+### Requiremend of create method is : 
+- Return Type
+- Method Name
+- Method Body
+
+### Common mistake to write method for new comer.
+- If return type is `void` then there is no need to write `return` statement.
+- Not forget the return statement.
+- It's not possible to write method inside the another method in java.
+
+
+### Parameter and Argument
+
+> Write variables inside the parentheses when define the methon called **parameters**.
+
+> Called the method with variables, here variables are **arguments**.
+
+## Object Instantiation
+
+> 🟢 When create a object using class called object instantiation.
+
+Three step to create a object from a class is : 
+- Declaration.
+- Instantiation.
+- Initialization.
+
+***Syntax to declare and initialization a object :***
+```java
+ClassName objectName; // declare a object
+// by default it store null value
+
+// initialization :
+objectName = new ClassName();
+
+// declare and initialization at same time : 
+ClassName objectName = new ClassName();
+
+// call the constructor with class name called object instantiation.
+```
+
+***Here is example of create object and work with it :***
+- [Create Bicycle class and make object.](./Bicycle.java)
+- [Create ComplexNumber class and make object and do some operation with object](./ComplexNumber.java)
+
+<hr />
+
+## Method Overloading
+
+> 🟢 Define two or more method with same name, but return type and argument list and types are different, that's called method overloading.
+
+***Method overloading parameters are three way to can be different from other :**
+
+- Parameters numbers are different.
+- Parameters data type are different each other.
+- Parameters numbers and type are same but their order are different.
+
+#### [Example of method overloading.](./Calculator.java);
+
+## Object
+
+> 🟢 We create object using `new` keyword, something dose this job to create object, this thing called **constructor**.
+
+**Characterstic of constructor in java :**
+
+- Constructor and class name are same.
+- Constructor is one kind of method which has no return type.
+- Contrucotor create object when instantiate a object with `new` keyword.
+- If a class without construcot then java compiler add default constructor for that class.
+- Constructor can be overload.
+
+**Syntax of define constructor :**
+```java
+public class ClassName{
+    ClassName(){ // constructor
+    
+    }
+}
+```
+
+**Example of using constructor :**
+- [Create person class to store about person.](./Person.java)
+- [Create student class to store about student.](./Student.java)
+
+## Constructor chainging
+When call a constructor from inside the another constructor in spacific way called constructor chaining. In that case use `this` keydword to called constructor from another inside of constructor. Here is example : 
+
+[Here is the example of constructor chaining.](./ChainPerson.java)
