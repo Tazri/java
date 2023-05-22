@@ -1,3 +1,5 @@
+package books.java_programming.chapter_05;
+
 import java.util.Scanner;
 
 public class CountLetter {

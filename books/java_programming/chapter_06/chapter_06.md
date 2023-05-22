@@ -261,4 +261,58 @@ public class ClassName{
 ## Constructor chainging
 When call a constructor from inside the another constructor in spacific way called constructor chaining. In that case use `this` keydword to called constructor from another inside of constructor. Here is example : 
 
-[Here is the example of constructor chaining.](./ChainPerson.java)
+**Here is the example :**
+- [Here is the example of constructor chaining.](./ChainPerson.java)
+- [Create stack using class.](./CharStack.java)
+- [Check is brackets are balanced are not using stack](./BracketBalancedChecker.java)
+
+
+#### StringJoiner
+```java
+Class StringJoiner, java.util.StringJoiner;
+
+use : 
+Use joining the string using various type of delimeter.
+
+prototype :
+StringJoiner(sperator,prefix,suffix);
+
+sperator : which is user for between two item in string joining.
+prefix : add prefix
+suffix : add suffix
+
+StringJoinerObject.add(String ob) : add string
+
+We can print StringJoiner object with System.out.println and System.out.print.
+```
+
+
+
+## Object Reference 
+
+> 🟢 When creating object with `new` keyword, and store it in a variable then the variable could not store the object, it store the reference of the object. 
+
+
+```java
+ClassName object = new ClassName();
+
+// here object variable store the reference.
+
+ClassName anotherObject = object;
+
+// here anotherObject and object store the same reference of a object.
+```
+
+#### [Here is testing reference of object.](./ReferenceTest.java)
+
+## Enum
+
+***Syntax of declaration enum :***
+
+```java
+public enum EnumName{ ValueOne, ValueTwo, ValueThree, ValueFour....};
+
+// access enum value
+EnumName enumObject = EnumName.ValueName;
+```
+

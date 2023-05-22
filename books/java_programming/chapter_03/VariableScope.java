@@ -1,3 +1,4 @@
+package books.java_programming.chapter_03;
 public class VariableScope {
     private int x = 0;
     private int y = 0;

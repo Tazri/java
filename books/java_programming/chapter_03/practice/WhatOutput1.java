@@ -1,4 +1,4 @@
-package practice;
+package books.java_programming.chapter_03.practice;
 
 public class WhatOutput1 {
     public static void main(String []args){

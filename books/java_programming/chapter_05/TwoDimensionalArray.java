@@ -1,3 +1,4 @@
+package books.java_programming.chapter_05;
 public class TwoDimensionalArray {
     public static void main(String args[]){
         // A 12x8 grid, in [row][col]

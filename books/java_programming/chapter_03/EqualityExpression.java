@@ -1,3 +1,4 @@
+package books.java_programming.chapter_03;
 import java.util.Scanner;
 
 public class EqualityExpression {

@@ -1,4 +1,4 @@
-package practice;
+package books.java_programming.chapter_02.practice;
 
 import java.util.Scanner;
 import java.lang.Math;

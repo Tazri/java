@@ -1,4 +1,4 @@
-package practice;
+package books.java_programming.chapter_05.practice;
 
 import java.util.Arrays;
 

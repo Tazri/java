@@ -1,3 +1,4 @@
+package books.java_programming.chapter_02;
 public class EquationSolver {
     public static void main(String []args){
         double x = 2.5;

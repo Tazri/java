@@ -1,3 +1,5 @@
+package books.java_programming.chapter_05;
+
 public class ArrayProcessOne {
     public static void main(String []args){
         int [] myArray = {-45, 1, 8, 4, 5, 4, 5, 105};

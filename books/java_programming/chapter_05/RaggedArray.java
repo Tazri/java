@@ -1,3 +1,4 @@
+package books.java_programming.chapter_05;
 public class RaggedArray {
     public static void main(String args[]){
         int [][]array = {

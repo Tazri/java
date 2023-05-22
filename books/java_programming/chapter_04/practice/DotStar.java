@@ -1,4 +1,5 @@
-package practice;
+package books.java_programming.chapter_04.practice;
+
 
 public class DotStar {
     public static void main(String args[]){

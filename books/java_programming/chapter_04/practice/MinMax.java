@@ -1,5 +1,4 @@
-package practice;
-
+package books.java_programming.chapter_04.practice;
 import java.util.Scanner;
 
 public class MinMax {

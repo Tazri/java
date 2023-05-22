@@ -1,3 +1,4 @@
+package books.java_programming.chapter_04;
 import java.lang.Math;
 
 public class LogTable {

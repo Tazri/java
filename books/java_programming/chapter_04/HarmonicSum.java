@@ -1,3 +1,4 @@
+package books.java_programming.chapter_04;
 public class HarmonicSum {
     public static void main(String args[]){
         int n = 5000;

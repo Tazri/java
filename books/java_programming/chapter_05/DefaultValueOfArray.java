@@ -1,3 +1,4 @@
+package books.java_programming.chapter_05;
 import java.util.Arrays;
 
 public class DefaultValueOfArray {

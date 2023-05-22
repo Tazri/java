@@ -1,3 +1,4 @@
+package books.java_programming.chapter_02;
 import java.util.Scanner;
 
 class Sum {

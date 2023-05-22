@@ -1,4 +1,4 @@
-package practice;
+package books.java_programming.chapter_02.practice;
 
 public class JavaPattern {
     public static void print(String s){

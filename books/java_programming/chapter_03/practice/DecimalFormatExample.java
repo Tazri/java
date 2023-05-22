@@ -1,4 +1,4 @@
-package practice;
+package books.java_programming.chapter_03.practice;
 
 import java.text.DecimalFormat;
 

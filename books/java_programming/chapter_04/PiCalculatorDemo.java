@@ -1,3 +1,4 @@
+package books.java_programming.chapter_04;
 class Picalculator {
     public double calculate (int nterms){
         double numerator = 4.0;

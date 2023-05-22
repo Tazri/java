@@ -1,4 +1,4 @@
-package practice;
+package books.java_programming.chapter_04.practice;
 
 public class NumberHalfPyramid {
     public static void main(String args[]){
