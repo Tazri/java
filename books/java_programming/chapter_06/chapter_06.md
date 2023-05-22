@@ -316,3 +316,158 @@ public enum EnumName{ ValueOne, ValueTwo, ValueThree, ValueFour....};
 EnumName enumObject = EnumName.ValueName;
 ```
 
+***Syantax of enum constructor :***
+```java
+enum EnumName{
+    ValueName(value),
+    ValueName(value),
+    ....
+    ValueName(value);
+
+    access_spacifier type fieldName;
+    
+    // constructor
+    private EnumName(parameterList){
+        // statement
+    }
+}
+```
+
+**Example of enum constructor :**
+- [Level](./Level.java)
+- [Create enum for pizza size](./Size.java)
+
+**Important information about enum :**
+- Enum is a one kind of class which is extends the `java.lang.Enum` class. Enum dose not extendable, but enum can implement interface.
+- Enum is type safe. Mean that's dose not allow to other value to assining in enum.
+- `==` and `equals()` method use for compare enums.
+- It dose not possible to create enum instance using `new` keyword.
+
+<hr />
+
+## Null
+A object dose not store anything then it store `null` value. If try to access null value then java throw `NullPointerException` exception.
+
+
+## Static Variable, Constant and Method
+
+> 🟢 when decalare a variable and method with `static` keyword then the method and keyword are not copy in every object. I'ts associate with only class not object. 
+
+> 🟢 If declare with variable with `final` then this variable turn into constant. In java convention constant write with uppercase. `final` variable are not support more than one time initialization.
+
+> 🟢 Static method only can change the static field where non static method can change static and non static field. Also static method can only use static variable.
+
+**Examples :**
+- [Example of static variable.](./Circle.java)
+- [Example of static method.](./CalculatorStatic.java)
+- [Another exaple of static field.](./CricketPlayer.java)
+
+<hr />
+
+## Practice
+
+### 1. Difference between class and object ?
+`And :` <br />
+
+**Different between class and object :**
+
+| class                     | Object                     |
+|---------------------------|----------------------------|
+| Class is a blue print of object. | Object is instants of class. |
+| Class is not independed entity.  | Object is a indepened entity. |
+| Class use to create object.      | Object use to hold state and behavior. |
+| Class define what object should be. | Object execute task and chane state what class define. |
+
+
+### 2. What type of elements has a java program ?
+`Ans :` <br />
+
+**A java program hold :**
+- Package declaration.
+- Import package statement.
+- Type declaration. ( class, enum and interface)
+- Methods.
+- Fields.
+
+### 3. What is package ? How to declare it ?
+`Ans :` <br />
+
+**Package** is one kind of folder which hold java class, enum, interface also hold others package. It use for organize the java classes, enums and interfaces. Here is syntax of declare package : 
+
+```java
+package package_name_similar_to_folder_name;
+```
+
+### 4. How to write java method ? What kind of element has java method ?
+`Ans :` <br />
+
+**Syntax of method declaration :**
+```java
+class ClassName{
+    // non-static method declare
+    accessModifier returnType methodName(parameterList){
+        // statemenet(s)
+    }
+
+    // static method declare
+    accessModifier static returnType methodName(parameterList){
+        // statement(s)
+    }
+}
+```
+
+### 5. What is method overloading ? Write it with example ?
+`Ans :` <br />
+
+Method overloading is, define a method with same name in the same class with different type of parameter list or different type of parameter or different parameter type order called method overloading.
+
+**Here is the example of method overloading in java :**
+```java
+class Calculator{
+    private int add(int a,int b){
+        return a + b;
+    }
+
+    // overload the method
+    private int add(int a,int b,int c){
+        return a + b + c;
+    }
+}
+```
+
+### 6. How to create a object ?
+`Ans :` <br />
+
+**Here is the syntax of create object :**
+```java
+// create object
+ClassName objectName = new ClassName();
+
+// if Class has parameter then
+ClassName objectName = new ClassName(ArgumentList..);
+```
+
+### 7. What is constructor ?
+`Ans :` <br />
+
+**Constructor :** Construcot is thing which is define the object, and take memory for object when declare the object. If a class has no object then compiler add by default constructor for the object.
+
+**Difference between constructor and method :**
+
+| Constructor        | Method |
+|-------------------|--------|
+| Constructor define the object. | Method is behavieor of the object. |
+| Constructor has no return type. | Method has return type.|
+| Constructor name and class name always same. | Class name ans method name are not same. |
+| Constructor called when create the object. | Method called when it call. |
+| Constructor called one time. | Method called when it necessary to call, and call it as much time it needed. |
+
+<hr />
+
+## Navigator
+
+#### [< Chapter 5 : Array](./../chapter_05/chapter_05.md)
+#### [Back to table of Index](./../Note.md)
+#### [Chapter 7 : Object and Class >](./../chapter_07/chapter_07.md)
+
+#### [Back to READEME.md >](./../../../README.md)

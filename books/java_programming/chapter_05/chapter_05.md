@@ -263,8 +263,8 @@ Here is all practice file :
 
 ## Navigator
 
-#### [< Chapter 4 : Control FLow >](./../chapter_03/chapter_03.md)
+#### [< Chapter 4 : Control FLow](./../chapter_04/chapter_04.md)
 #### [Back to table of Index](./../Note.md)
-#### [Chapter 6 : Object and Class >](./../chapter_05/chapter_05.md)
+#### [Chapter 6 : Object and Class >](./../chapter_06/chapter_06.md)
 
 #### [Back to READEME.md >](./../../../README.md)

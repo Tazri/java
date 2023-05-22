@@ -14,3 +14,17 @@ public enum Level{
         return this.levelCode;
     }
 }
+
+class LevelDemo{
+    public static void main(String args[]){
+        // call the constructor
+        Level me= Level.HIGH; // Level(Level.HIGH); // but this thing is not support
+
+        System.out.println("> me.getLevelCode : "+me.getLevelCode());
+    }
+}
+
+/*
+Output :
+> me.getLevelCode : 3
+*/
