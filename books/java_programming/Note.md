@@ -14,3 +14,5 @@ All Chapter Note :
 - [Chapter 03: Data Type, Operator and Expression](./chapter_03/chapter_03.md)
 - [Chapter 04: Control FLow](./chapter_04/chapter_04.md)
 - [Chapter 05: Array](./chapter_05/chapter_05.md)
+- [Chapter 06: Object and Class](./chapter_06/chapter_06.md)
+- [Chapter 07: Object Oriented Programming](./chapter_07/chapter_07.md)
