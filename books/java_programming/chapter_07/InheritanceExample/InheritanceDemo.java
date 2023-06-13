@@ -13,3 +13,8 @@ public class InheritanceDemo {
         dog.sleep();
     }
 }
+
+/*
+ * 
+ * show the whole package to understand this
+ */
