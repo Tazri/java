@@ -302,5 +302,400 @@ public class SubClassName extends SuperClassName{
 
 ## Polymorphism
 
-> 🟢 Something which can capabol to transform many form in various time called polymorphism in oop. Some part of program in oop can capable to change form based on time.
+> 🟢 Something which can capable to transform many form in various time called polymorphism in oop. Some part of program in oop can capable to change form based on time.
 
+> ● Polymorphism come from Greek word "poly" and "morph". Meaning "multiple" and "Form".
+
+
+> 🔴 If Parent Class variable store sub sub class vairable and called the override method from parent class variable then it called sub class method.
+
+```java
+class Parent{
+    public void say(){
+        System.out.println("Hello, from parent.");
+    }
+}
+
+
+class Child extends Parent{
+    @Override // override the say method
+    public void say(){
+        System.out.println("Hello, from Child.");
+    }
+}
+
+public class Main{
+    public static void main(String args[]){
+        Parent parentVariable = new Child();
+
+        parentVariable.say(); // it called the child method.
+    }
+}
+```
+
+> 🟢 It possible to pass sub class variable in function parater instead of parent class. 
+
+```java
+functionName(subclassVairable); // where function argument type ParentClass variable.
+```
+
+> 🟠 If class name with package as string it called **Fully qualified name**.
+
+
+**Point to be noted :**
+- It possible to store subclass into super class reference.
+- In that case called the method, then it call super class method.
+- If override the method by `@Override` keyword from sub class then it called sub class method in runtime.
+
+<hr / >
+
+## Up Casting and Down Casting
+
+> 🟢 When store a different type of object into variable called casting. There two type of casting.
+
+- Up casting (implicit). Store child object into parent reference.
+- Down casting (explicit). Cast the parent type to child type. In that case make sure that Variable can cast to child object by `instanceof` keyword.
+
+**Example of Up casting :**
+```java
+ParentClass objectName = new ChildClass();
+```
+
+**Example of Down casting with safe way :**
+```java
+if(parentObject instanceof ChildClassName){
+    ChildClassName objectName = (ChildClassName) parentObject; // cast the down.
+}
+```
+
+<hr />
+
+## Abstract Class and Abstract method
+
+> 🟢 A class starting to write with `abstract` keyword called abstract class. This type of calss is not instantiatable. This type of class only use for inheriting.
+
+Here is example of declare abstract class :
+```java
+abstract class ClassName{
+
+}
+```
+
+
+> 🟢 A abstract method is a method in abstract class, declare with `abstract` keyword without defination that what to do, just write what it return and what it takes. This type of method define in child class with `Override` keyword. Here is example : 
+
+
+```java
+abstract class ClassName{
+    abstract return_type abstractMethodName(/** arguments */);
+    // no defination this method. It will override in child class.
+}
+```
+
+**Rule of abstract class and method :**
+1. Abstract class are not instantiatable. Dose not create abstract class object using `new` keyword.
+2. Abstract class can be has constructor.
+3. Abstract class and abstract method can not be declare with `final` keyword or as a final.
+4. A abstract class can be has abstract method or not.
+5. Abstract method only used in abstract class.
+6. It's necessary to implement all abstract method in sub class.
+7. It can be happen that a sub class of regular class can be abstract class.
+
+
+> 🟣 Extensibility - the ability to be extended or stretched.
+
+
+> 🟢 A abstract class with only abstract method called **pure abstract class.**
+
+<hr />
+
+## Interface
+
+> 🟢 **Interface** is a one kind of abstract class which is use for define the class behavior. Describe the method what it take and what it return but do not define the body. Method body are define in sub class which is implement this.
+
+
+> 🟢 It possible to create interface variable but not to possible create interface instance. The interface vairable store a object which object class implement's the interface.
+
+**Example of daclare interface :**
+```java
+public interface PureAbstractClass{
+    void method1();
+    void method2();
+    void method3();
+}
+```
+
+**Example of implements inteface :**
+```java
+public class ClassName implements interface{
+    /* implementing */
+}
+```
+
+**Some rules for interface :**
+1. A interface method always public and abstract. So not necessary to use `abstract` and `public` keyword in interface.
+2. Interface vairable are constant and it is `public static`. If not use these keyword, compile automatic attach those keyword.
+3. Interface method can not be final.
+4. A interface can extend another interface.
+
+```java
+interface A{
+    void method1();
+    void method2()j;
+}
+
+interface B extends A{
+    void method3();
+    void method4();
+}
+```
+
+5. Java class can implement multiple interface.
+
+```java
+public class ClassName implements interface1, interface2, interface3{
+
+}
+```
+
+6. A interface can be without method.
+7. A inteface can be has private static or default method.
+
+<hr />
+
+## Multiple Inheritance
+
+> 🟢 Java dose not support multiple inheritance because it create a diamond problem.
+
+<hr />
+
+## Practice
+
+<details>
+    <summary>Practice 1 : BMI</summary>
+
+1. [BMI Class](./practice/practice_1_bmi/BMI.java)
+2. [Testing Here](./practice/practice_1_bmi/Main.java)
+</details>
+
+<details>
+<summary>Practice 2 : Calculate area</summary>
+
+1. [Area Calculator class which use  to calculate area of circle, tirangle, rectangle and cylinder.](./practice/practice_2_shape/AreaCalculator.java)
+</details>
+
+<details>
+<summary>Practice 3 : Author and Book</summary>
+
+1. [Author Class](./practice/practice_3_author_and_book/Author.java)
+2. [Book Class](./practice/practice_3_author_and_book/Book.java)
+3. [Test Class](./practice/practice_3_author_and_book/TestApp.java)
+</details>
+
+<details>
+<summary>Practice 4 : Predict the output</summary>
+
+1. [Animal Class](./practice/practice_4_analysis/Animal.java)
+2. [Horse Class](./practice/practice_4_analysis/Horse.java)
+3. [UseAnimal Class](./practice/practice_4_analysis/UseAnimal.java)
+
+Predicted Output : 
+```bash
+> Inside Animal Version.
+```
+
+Output : 
+```bash
+> Inside Animal Version.
+```
+</details>
+
+<details>
+<summary>Practice 5 : Find the mistake</summary>
+
+1. [Shape class](./practice/practice_5_find_mistake/Shape.java)
+2. [Circle class](./practice/practice_5_find_mistake/Circle.java)
+
+The mistake has in circle class, which is that try to override private methdo, which is not possible.
+</details>
+
+<details>
+<summary>Practice 6 : ATM</summary>
+
+1. [Transision Class](./practice/practice_6_atm/Transision.java)
+2. [Account Class](./practice/practice_6_atm/Account.java)
+3. [ATM Class](./practice/practice_6_atm/ATM.java)
+4. [Main Class](./practice/practice_6_atm/Main.java)
+
+
+**Sample output of this practice :**
+```bash
+> ATM going to Start...
+> Main Menu <
+> 'options' Show Options
+> 'enter' -> Log in
+> 'create' -> Create account
+> 'stop' -> Stop ATM
+
+
+> Command : create
+> Enter new account name : 
+Md Tazri
+> Enter password : 
+thisispassword
+> Thanks to create a account, now log your account with the password.
+
+> Command : options
+> Main Menu <
+> 'options' Show Options
+> 'enter' -> Log in
+> 'create' -> Create account
+> 'stop' -> Stop ATM
+
+> Command : check
+
+> Your option is not valid
+
+> Command : enter 
+> Enter your user name please : 
+Md Tazri
+> Enter your password please : 
+thisispassword
+> Welcome Md Tazri
+> Your current balance : 100
+
+
+> Main Menu <
+> 'options' Show Options
+> 'check' -> Check Balance
+> 'withdraw' -> Withdraw
+> 'deposit' -> Depsoit
+> 'exit' -> Exit
+> 'stop' -> Stop ATM
+
+> Command : check
+> current blance : 100
+
+> Command : deposit
+> Deposit amount : 5030200
+> Transision Details <
+> Account Name : Md Tazri
+> Status : Successfull
+> Desposit : 5030200
+> Balance : 5030300
+> Transition Successfull :)
+
+> Command : withdraw 
+> Withdraw amount : 3234563
+> Password : thisispassword
+> Transistion Details <
+> Account Name : Md Tazri
+> Status : Successfull
+> Widtraw : 3234563
+> Balance : 1795737
+> Transition Successfull :)
+
+> Command : check
+> current blance : 1795737
+
+> Command : exit
+> Thanks to use our service. :)
+
+> Command : options
+> Main Menu <
+> 'options' Show Options
+> 'enter' -> Log in
+> 'create' -> Create account
+> 'stop' -> Stop ATM
+
+> Command : create
+> Enter new account name : 
+Ans Anonymo
+> Enter password : 
+anonymopassword
+> Thanks to create a account, now log your account with the password.
+
+> Command : enter
+> Enter your user name please : 
+Ans Anonymo
+> Enter your password please : 
+anonymopassword
+> Welcome Ans Anonymo
+> Your current balance : 100
+
+
+> Main Menu <
+> 'options' Show Options
+> 'check' -> Check Balance
+> 'withdraw' -> Withdraw
+> 'deposit' -> Depsoit
+> 'exit' -> Exit
+> 'stop' -> Stop ATM
+
+> Command : check    
+> current blance : 100
+
+> Command : deposit 
+> Deposit amount : 5403200
+> Transision Details <
+> Account Name : Ans Anonymo
+> Status : Successfull
+> Desposit : 5403200
+> Balance : 5403300
+> Transition Successfull :)
+
+> Command : withdraw 
+> Withdraw amount : 432
+> Password : anonymopassword
+> Transistion Details <
+> Account Name : Ans Anonymo
+> Status : Successfull
+> Widtraw : 432
+> Balance : 5402868
+> Transition Successfull :)
+
+> Command : check
+> current blance : 5402868
+
+> Command : exit
+> Thanks to use our service. :)
+
+> Command : enter 
+> Enter your user name please : 
+Md Tazri
+> Enter your password please : 
+thisispassword
+> Welcome Md Tazri
+> Your current balance : 1795737
+
+
+> Main Menu <
+> 'options' Show Options
+> 'check' -> Check Balance
+> 'withdraw' -> Withdraw
+> 'deposit' -> Depsoit
+> 'exit' -> Exit
+> 'stop' -> Stop ATM
+
+> Command : check
+> current blance : 1795737
+
+> Command : exit
+> Thanks to use our service. :)
+
+> Command : stop
+
+
+> Terminate <
+```
+
+</details>
+
+<hr />
+
+
+#### [< Chapter 6 : Object and Class](./../chapter_06/chapter_06.md)
+#### [Back to table of Index](./../Note.md)
+#### [Chapter 8 : Exception Handling >](./../chapter_08/chapter_08.md)
+
+#### [Back to READEME.md >](./../../../README.md)
