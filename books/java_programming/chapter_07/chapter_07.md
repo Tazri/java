@@ -7,6 +7,21 @@ A object has two thing :
 1. State
 2. Behavior.
 
+Here this chapter cover : 
+
+- [Adventage of object oriented programming](#adventage-of-object-oriented-programming)
+- [Application of object oriented programming](#application-of-object-oriented-programming)
+- [Encapsulation](#encapsulation)
+- [Abstraction](#abstraction)
+- [Inheritance](#inheritance)
+- [Polymorphism](#polymorphism)
+- [Up Casting and Down Casting](#up-casting-and-down-casting)
+- [Abstract Class and abstract method](#abstract-class-and-abstract-method)
+- [Interface](#interface)
+- [Multiple Inheritance](#multiple-inheritance)
+- [Practice](#practice)
+- [Navigation](#navigation)
+
 ## Adventage of object oriented programming
 Here is adventage of object oriented programming : 
 
@@ -693,6 +708,8 @@ thisispassword
 
 <hr />
 
+
+## Navigation
 
 #### [< Chapter 6 : Object and Class](./../chapter_06/chapter_06.md)
 #### [Back to table of Index](./../Note.md)
